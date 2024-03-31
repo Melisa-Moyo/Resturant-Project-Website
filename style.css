@@ -63,7 +63,7 @@ text-align: left;
 margin-top: 70px;
 }
 .hero-main-introduction {
-    margin-top: 90px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ select[name='hero-location-selection'] {
     margin-left: -19px;
 }
 .hero-icons{
-    margin-top: 80px;
+    margin-top: 20px;
     margin-left: -450px;
     
 }
