@@ -8,6 +8,7 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    margin-left: 110px;
 }
 .navbar-brand img{
     margin-left: -200px;
@@ -56,7 +57,7 @@ header {
 
 .hero-main-title h1{
 color: #000;
-font-size: 120px;
+font-size: 90px;
 font-family: "Abril Fatface", serif;
 text-align: left;
 margin-top: 70px;
@@ -128,7 +129,7 @@ select[name='hero-location-selection'] {
 
 /*-------------ABOUT US SECTION------------*/
 .about-us-section{
-    height: 90vh;
+    height: 103vh;
 }
 .about-us-container {
     display: flex;
@@ -170,7 +171,7 @@ select[name='hero-location-selection'] {
 }
 
 .about-us-content {
-    margin-top: -60px;
+    margin-top: 10px;
     width: 45%; 
     position: relative;
     left: 19%;
@@ -187,12 +188,12 @@ font-weight: 500;
 }
 .about-us-content h1{
 color: #000;
-font-size: 85px;
+font-size: 55px;
 font-family: "Abril Fatface", serif;
 line-height: 1;
 }
 .about-us-content p{
-    font-size: 23px;
+    font-size: 14px;
     font-weight: 200;
     margin-top: 30px;
     width: 118%;
@@ -209,7 +210,7 @@ line-height: 1;
     color: #ffffff;
     padding: 15px 20px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -218,7 +219,7 @@ line-height: 1;
     background-color: #FFAA4D;
     color: #ffffff;
     padding: 15px 20px;
-    font-size: 20px;
+    font-size: 16px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -246,7 +247,7 @@ line-height: 1;
 .order-online-section {
     background-color: #F2F6F7;
     width: 100vw;
-    height: 166vh;
+    height: 246vh;
   }
   .order-online-context {
     padding-top: 50px;
@@ -260,7 +261,7 @@ line-height: 1;
   .order-online-context h1 {
     margin-top: 20px;
     margin-bottom: 40px;
-    font-size: 67px;
+    font-size: 57px;
     font-weight: 500;
     font-family: "Libre Baskerville", serif;
   }
