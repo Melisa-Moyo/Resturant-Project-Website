@@ -1,0 +1,625 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.navbar-brand img{
+    margin-left: -200px;
+}
+.nav-details{
+    gap: 40px;
+}
+.nav-details a{
+    color: #000;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: "Nanum Myeongjo", serif;
+}
+.nav-details a:hover{
+    text-decoration: underline;
+    color: #898f92;
+}
+.nav-details i:hover{
+    color: #a1a3a3;
+    cursor:pointer;
+}
+.nav-details i{
+    color: #000;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.section-container {
+    position: relative;
+    background-image: url("/images/WeightManagementBlogHeader.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section-content {
+    position: absolute;
+    top: 50%;
+    left: 650px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.hero-main-title h1{
+color: #000;
+font-size: 120px;
+font-family: "Abril Fatface", serif;
+text-align: left;
+margin-top: 70px;
+}
+.hero-main-introduction {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 30px 40px #d0d8db;
+}
+input[type='text'] {
+    width: 800px;
+    height: 7vh;
+    font-size: 18px;
+    padding-left: 34px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    outline: none;
+}
+.search {
+    position: relative;
+}
+.search i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #898f92;
+}
+select[name='hero-location-selection'] {
+    padding: 20px ;
+    border: 1px solid #FF8800;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #FF8800;
+    color: #ffffff;
+    outline: none;
+    height: 7vh;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin-left: -19px;
+}
+.hero-icons{
+    margin-top: 80px;
+    margin-left: -450px;
+    
+}
+.hero-icons i{
+    font-size: 40px;
+    color: #FF8800;
+    text-decoration: none;
+    
+}
+.hero-icons a{
+    padding: 40px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+    font-weight: 600;
+    font-family: cursive;
+    
+}
+
+/*-------------ABOUT US SECTION------------*/
+.about-us-section{
+    height: 90vh;
+}
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-image,
+.right-image {
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.left-image img,
+.right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+}
+.right-image::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.452) 0%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none;
+}
+
+.about-us-content {
+    margin-top: -60px;
+    width: 45%; 
+    position: relative;
+    left: 19%;
+    transform: translate(-50%, 0%);
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    z-index: 1;
+}
+.about-us-content h2{
+    color: #ff8800e1;
+    font-size: 25px;
+margin-bottom: 10px;
+font-weight: 500;
+}
+.about-us-content h1{
+color: #000;
+font-size: 85px;
+font-family: "Abril Fatface", serif;
+line-height: 1;
+}
+.about-us-content p{
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: 30px;
+    width: 118%;
+}
+.left-image {
+    width: 35%;
+}
+.about-us-menu{
+    display: flex;
+    margin-top: 70px;
+}
+.about-us-menu .discover-link{ 
+    background-color: #FF8800;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.about-us-menu .discover-icon{
+    background-color: #FFAA4D;
+    color: #ffffff;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+@media (max-width: 768px) {
+    .about-us-container {
+        flex-direction: column;
+    }
+
+    .left-image,
+    .right-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image::before,
+    .right-image::before {
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    }
+}
+
+/*---------------Order Online Section------------------*/
+
+.order-online-section {
+    background-color: #F2F6F7;
+    width: 100vw;
+    height: 166vh;
+  }
+  .order-online-context {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .order-online-context h2 {
+    color: #FFAA4D;
+    font-size: 25px;
+  }
+  .order-online-context h1 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 67px;
+    font-weight: 500;
+    font-family: "Libre Baskerville", serif;
+  }
+  .menu-onine {
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+    font-weight: 400;
+    border-bottom: 2px solid #000;
+    margin: 10px;
+  }
+  .menu-onine:hover {
+    color:#FFAA4D;
+    border-bottom: 2px solid #FFAA4D;
+  }
+  .picture-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+  }
+  .picture-menu-container {
+    width: 400px;
+    height: 53vh;
+    margin-left: 3.5%;
+    margin-bottom: 3.5%;
+    position: relative;
+  }
+  .picture-menu-container:hover .online-menu-description {
+    display: inherit;
+  }
+  .online-menu-description {
+    padding-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    display: none;
+  }
+  .online-menu-description h4 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .online-menu-description h2 {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+  .online-menu-description i {
+    color: #FFAA4D;
+  }
+  .online-link-order {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 20px;
+    padding: 5px 10px;
+    background-color: #FF8800;
+    border-radius: 10px;
+    line-height: 1;
+    font-size: 35px;
+  }
+  .menu-onine.active {
+    color: #ffa03a;
+    border-bottom: 1px solid #ffa03a;
+}
+  .online-menu-description:hover{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.61);
+    transition: opacity 0.5s;
+  }
+  .picture-menu-container:hover .online-menu-description:hover {
+    opacity: 0.9;
+  }
+  
+  #toast {
+    background: center / cover no-repeat url("/images/panatone\ french\ toast.webp"); 
+  }
+  #tacos{
+    background: center / cover no-repeat url("/images/Breakfast\ Tacos.jpg"); 
+  }
+  #pancakes {
+    background: center / cover no-repeat url("/images/Eggless\ Pancakes.webp"); 
+  }
+  #sandwitch{
+    background: center / cover no-repeat url("/images/Breakfast\ Sandwich.jpg");
+  }
+  #veggie {
+    background: center / cover no-repeat url("/images/chicken\ veggie\ bread.jpg"); 
+  }
+  #avacado{
+    background: center / cover no-repeat url("/images/Avocado\ black\ bean\ eggs.jpg");
+  }
+  #bread {
+    background: center / cover no-repeat url("/images/egg\ and\ bread.jpg"); 
+  }
+  #croissant{
+    background: center / cover no-repeat url("/images/baked\ croissant\ breakfast\ sandwiches.jpg"); 
+  }
+  #mayonayse {
+    background: center / cover no-repeat url("/images/chicken\ and\ mayonayse.webp"); 
+  }
+  #pizza {
+    background: center / cover no-repeat url("/images/cheese\ pizza.jpg"); 
+  }
+  #wraps {
+    background: center / cover no-repeat url("/images/chicken\ wraps.jpg"); 
+  }
+  #grilled {
+    background: center / cover no-repeat url("/images/Grilled\ Burger.jpg"); 
+  }
+  #pork {
+    background: center / cover no-repeat url("/images/Pork\ with\ Mushroom\ Stuffing.jpg"); 
+  }
+  #lobster{
+    background: center / cover no-repeat url("/images/boiled\ lobster.jpg");
+  }
+  #prawns {
+    background: center / cover no-repeat url("/images/prawns\ and\ beef.jpg"); 
+  }
+  #burger {
+    background: center / cover no-repeat url("/images/Burger\ Large.jpg"); 
+  }
+  #banana {
+    background: center / cover no-repeat url("/images/banana\ pie.jpg"); 
+  }
+  #cake {
+    background: center / cover no-repeat url("/images/Cheese\ cake.jpg"); 
+  }
+  #chocolate {
+    background: center / cover no-repeat url("/images/Chocolate\ cake.jpg"); 
+  }
+  #pudding {
+    background: center / cover no-repeat url("/images/chocolate\ pudding.png"); 
+  }
+
+  #strawberry {
+    background: center / cover no-repeat url("/images/strawberry\ milkshake.jpg"); 
+  }
+  #waffle {
+    background: center / cover no-repeat url("/images/Vanilla\ waffle\ shake.jpg"); 
+  }
+  #shake {
+    background: center / cover no-repeat url("/images/Chocolate\ shake.jpg"); 
+  }
+  #cookie {
+    background: center / cover no-repeat url("/images/cookie\ milkshakes.jpg"); 
+  }
+  
+
+  .online-menu-icons {
+    padding-top: 10px;
+    text-align: center; 
+    color: #FFDBB2;
+    font-size: 20px;
+  }
+  .online-menu-icons i {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #online-menu-icon {
+    font-size: 30px;
+    color: #FF8800;
+    vertical-align: bottom;
+  }
+
+  /*-------------Opening Hours Section---------------------*/
+  .opening-hours-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(246, 247, 249);
+}
+
+.opening-hours-img img {
+    position: absolute;
+    bottom: -210px;
+    transform: translateY(-120px); 
+    left: 0;
+    width: 100%;
+    height: 145vh;
+    opacity: 0.3;
+}
+
+  .opening-hours-context {
+    text-align: center;
+    margin-top: 88px;
+    
+  }
+  .opening-hours-context h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    font-weight: 600;
+    font-family: "Libre Baskerville", serif;
+  }
+  .opening-hours-context h3 {
+    display: block;
+  }
+  .opening-hours-context .opening-hours-title {
+    color: #FF8800;
+  }
+  .opening-hours-context i {
+    color: #FF8800;
+    border-radius: 50%;
+    border: 3px solid #FF8800;
+    padding: 15px;
+  }
+  .opening-hours-context .opening-hours-contact {
+    padding-top: 32px;
+    color: #000;
+  }
+  .opening-hours-context .opening-hours-number {
+    color: #FF8800;
+    font-size: 31px;
+    font-weight: 600;
+    padding-top: 16px;
+  }
+  .opening-hours-times {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    width: 50vw;
+    margin-left: 25.5vw;
+  }
+  .opening-hours h4 {
+    font-size: 27px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-family: "Abril Fatface", serif;
+    
+  }
+  .opening-hours p {
+    margin-top: 0;
+    font-size: 24px;
+    
+  }
+ 
+  
+  .opening-images-container {
+    width: 40%; 
+    height: 40rem;
+    position: relative;
+    margin: auto;
+    margin-top: 2.5rem;
+    
+}
+
+.slideshow-image {
+    width: 100%;
+    border-radius: 5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+    opacity: 0.8;
+}
+
+.openng-left, .opening-right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #FF8800;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid #FF8800;
+    z-index: 2;
+}
+.openng-left:hover, .opening-right:hover{
+    background-color: #FF8800;
+    color: #ffffff;
+}
+.opening-right {
+    right: -400px;
+    transform: translateY(-50%);
+}
+
+.openng-left {
+    left: -400px;
+    transform: translateY(-50%);
+    
+}
+
+
+
+/*----------Testiomnials Section------------------*/
+.testiomnials-section {
+    background-color: #ffffff;
+    width: 100%;
+    height: 90vh;
+    margin-top: 140px;
+  }
+  .Testimonials-text {
+    text-align: center;
+  }
+  .Testimonials-text h2{
+color: #FF8800;
+font-size: 25px;
+  }
+  .Testimonials-text h3 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #000;
+    font-family: "Abril Fatface", serif;
+  }
+  
+  .Testimonials-text i {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: #FF8800;
+    font-size: 1.5rem;
+  }
+  .Testimonials-text p {
+    font-size: 30px;
+    width: 80%;
+    line-height: 1.2;
+    margin-top: 10px;
+    margin: 0 auto;
+  }
+  .customer-profile {
+    border-radius: 50%;
+    width: 220px;
+    height: 25vh;
+  }
+  .customer-name {
+    font-size: 40px;
+    padding-top: 10px;
+  }
+  .cutomer-title {
+    color: #000;
+  }
+  
+  .customer-reviews {
+    padding-top: 30px;
+    text-align: center; 
+    color: #FF8800;
+    font-size: 10px;
+  }
+  .customer-reviews i {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #customer-reviews-cicle {
+    font-size: 20px;
+    color: #FF8800;
+    vertical-align: bottom;
+  }
